@@ -1,0 +1,627 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --maincolor:#111a18;
+    --secondcolor:#f8a803;
+    --thirdcolor:#f4ab01;
+    --textcolor:#1c77d3;
+}
+*{
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    outline: none; 
+    border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:all .2s linear;
+    font-family: var(--poppins-font);
+    
+}
+/* Home */
+html{
+    font-size: 78.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7%;
+    width: 100%;
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.2)!important;
+    z-index: 1000;
+    background-color: white ;
+
+}
+/* Logo */
+.logo{
+    width: 170px;
+}
+.logo img{
+    width: 120%;
+    border-radius: 5rem;
+}
+.navbar a{
+    color: black;
+    font-size: 4.8rem;
+    margin: 2rem;
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+
+
+}
+.navbar a:hover{
+    color: red;
+    padding: 10px 10;
+    background: #d5d5e4;
+    
+}
+
+.navbar a::after{
+    content: "";
+    background-color: black;
+    width: 0;
+    position: absolute;
+    height: 2rem;
+    left: 0;
+    margin-top: 0.5rem;
+    top: 80%;
+    transition: 0.5s;
+    
+}
+.navbar a:hover::after{
+    width: 100%;
+}
+
+#menu-bars{
+    color: var(--textcolor);
+    font-size: 2.5rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    display: none;
+}
+#menu-bars:hover{
+    color: red;
+}
+/* Appoinment */
+.right-icons .btn{
+
+    padding: 1rem 2rem;
+    font-size: 5rem;
+    background: var(--maincolor);
+    color: rgb(226, 209, 15);
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5rem;
+}
+.right-icons .btn:hover{
+    background-color: red;
+
+}
+/* header section ended */
+
+/* Home section started */
+
+.main-home{
+    padding: 2rem 7%;
+    background-image: url("https://previews.123rf.com/images/bbbaaaaz/bbbaaaaz1607/bbbaaaaz160700001/61569391-modern-background-with-plexus-style-perfect-for-website-or-banner-backgrounds-or-as-a-wallpaper.jpg");
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 56rem;
+    flex-wrap: wrap;
+    gap: 48rem;
+}
+.home .home-left-content{
+    flex: 1 1 40rem;
+}
+
+.home-left-content span{
+    font-size: 8rem;
+    color: var(--maincolor);
+    padding: 1rem 0;
+    font-weight: bolder;
+}
+.home-left-content h2{
+    font-size: 80px;
+    margin: 1rem 0;
+    
+}
+.home-left-content p{
+    font-size: 5rem;
+    color: rgb(221, 6, 6);
+    line-height: 5.8rem;
+}
+
+.home-btn{
+    
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+
+}
+.home-btn a{
+    padding: 1rem 2rem;
+    font-size: 5rem;
+    background: var(--maincolor);
+    color: rgb(226, 209, 15);
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 3rem;
+    display: inline-block;
+
+}
+.home-btn a:hover{
+    padding: 1.5rem 2.5rem;
+}
+
+
+.homebtnsec{
+    background:transparent !important;
+    color: var(--textcolor) !important;
+    border: 1px solid var(--maincolor);
+}
+.homebtnsec:hover{
+    background-color: var(--secondcolor) !important;
+    color: white !important;
+}
+
+.home .home-right-content{
+    flex: 1 1 30rem;
+}
+
+.home .home-right-content img{
+    width: 120rem;
+    margin-top: 10rem;
+    box-shadow: 0 25px 100px rgba(7, 6, 6, 0.59);
+    border-radius: 150px;
+    margin-left: -15%;
+}
+/* Home sefity & Quality  */
+
+.technology{
+    padding: 20rem 7%;
+    background-image: url("https://previews.123rf.com/images/bbbaaaaz/bbbaaaaz1607/bbbaaaaz160700001/61569391-modern-background-with-plexus-style-perfect-for-website-or-banner-backgrounds-or-as-a-wallpaper.jpg");
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.main-technology{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8rem;
+    margin-top: -100px;
+    
+}
+.inner-technology{
+    flex: 1 1 300px;
+    padding: 3rem 5rem;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMCr4gaSh9-oJ_dL3UDrIOb1GzBwPPJ-zisKtidL3LBA&s");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.inner-technology span{
+    width: 0;
+    height: 100%;
+    background-color: var(--maincolor);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.5s;
+
+    
+}
+.inner-technology:hover span{
+    width: 100%;
+}
+
+.inner-technology:hover i{
+    
+    color: rgb(206, 39, 39);
+}
+.inner-technology:hover h2{
+    color: white;
+}
+.inner-technology:hover p{
+    color: rgb(230, 9, 9);
+}
+.inner-technology i{
+    font-size: 8rem;
+    color: var(--maincolor);
+}
+
+.inner-technology h2{
+    font-size: 5rem;
+    padding: 5rem 0;
+}
+.inner-technology p{
+    font-size: 4.5rem;
+    line-height: 5rem;
+    padding: 1rem 0;
+    
+}
+
+/* home section will end */
+
+/* About us section  */
+.main-about{
+    padding: 8rem 7%;
+    width: 100%;
+    background-image: url("https://media.istockphoto.com/id/1281041623/vector/studio-room-background.jpg?s=612x612&w=0&k=20&c=sa4Cmfav9HqximETEl9AuMy5BkMNgwu9c-b4apMm4rA=");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.main-about .about-heading{
+
+    text-align: center;
+    font-size: 100px;
+    font-weight: bolder;
+    color: white;
+    border-bottom: 2px solid var(--secondcolor);
+    width: 500px;
+    margin: 0 auto;
+    padding: 2rem 0;
+
+}
+.inner-main-about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25rem;
+    
+}
+
+.about-inner-content-left{
+    flex: 1 1 10rem;
+}
+.about-inner-content-left img{
+    width: 80%;
+    padding: 3rem;
+    object-fit: cover;
+    border-radius: 600px;
+    box-shadow: 0 25px 800px rgba(236, 2, 2, 0.979);
+    
+}
+.about-inner-content{
+    flex:  82rem;
+}
+.about-inner-content img{
+    width: 100%;
+    
+}
+.about-right-content h2{
+    font-size: 5.8rem;
+    padding: 2rem 0;
+    color: black;
+    font-weight: bolder;
+    line-height: 4.9rem;
+}
+.about-right-content p{
+    font-size: 4rem;
+    padding: 3rem 0;
+    color: rgb(201, 188, 188);
+    font-family: "Inter", sans-serif;
+    text-align: left;
+    line-height: 5.8rem;
+    
+}
+.aboutbtn{
+    padding: 1.5rem 3rem;
+    background-color: transparent;
+    border: 1px solid var(--maincolor);
+    margin-top: 0.5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: 0.5s all;
+}
+.aboutbtn:hover{
+    background-color: var(--secondcolor);
+    color: rgb(172, 9, 9);
+    border:none;
+    padding: 1.5rem 3.5rem;
+}
+/* home section will end */
+
+/* Doctor section  */
+
+.main-doctors{
+    padding: 5rem 9%;
+    background-image:  url("https://media.istockphoto.com/id/1281041623/vector/studio-room-background.jpg?s=612x612&w=0&k=20&c=sa4Cmfav9HqximETEl9AuMy5BkMNgwu9c-b4apMm4rA=");
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.doctors-heading{
+    font-size: 90px;
+    text-align: center;
+   margin: 18rem;
+   color: white;
+}
+.main-inner-doctor{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12rem;
+    
+    
+}
+.doc-poster{
+    flex: 1 1 300px;
+    box-shadow: 0 25px 800px rgba(236, 2, 2, 0.979);
+    position: relative;
+    overflow: hidden;
+    
+}
+.doc-poster img{
+    width: 100% ;
+    border: 2rem solid var(--maincolor);
+    
+}
+.doc-poster:hover img{
+    border-radius: 0 250px 0 0;
+    
+   
+}
+.doc-icons{
+    position: absolute;
+    left: -100%;
+    top: 10%;
+    transition: 0.5s;
+}
+.doc-poster:hover .doc-icons{
+    left: 5%;
+}
+
+.doc-icons i{
+    font-size: 3rem;
+    margin: 0.5rem;
+    border: 8px solid var(--secondcolor);
+    color: var(--maincolor);
+    padding: 1rem;
+    background-color: white;
+    cursor: pointer;
+    
+}
+.doc-icons i:hover{
+    background-color: rgb(189, 19, 19);
+    color: var(--secondcolor);
+    border-radius: 2px !important;
+    transform: scale(1.2);
+    border: 10px solid var(--maincolor);
+}
+
+.doc-poster:hover:after{
+    bottom: -100px;
+}
+
+.doc-details{
+ position: absolute;
+ text-align: center;
+ z-index: 2;
+ bottom: -120px;
+ left: 40%;
+
+}
+.doc-details h2{
+    color: rgb(252, 247, 247);
+    font-size: 65px;
+    padding: 0rem 0;
+}
+
+.doc-details i{
+    padding: 0.5rem;
+    font-size: 9rem;
+    color: rgb(236, 5, 5);
+    cursor: pointer;
+}
+.doc-details i:hover{
+    color: var(--secondcolor);
+    transform: scale(1.2);
+}
+
+.doc-poster:hover .doc-details{
+    bottom: 10px;
+}
+
+/* Doctor section will end */
+
+.our-service{
+    width: 100%;
+    padding: 3rem 1%;
+    
+}
+.service-heading h2{
+    font-size: 100px;
+    color: #0c0505;
+    text-align: center;
+    padding: 1rem 0;
+    margin-bottom: 3rem;
+    
+}
+/* services ends */
+
+/* Customer  reviews starts here*/
+.main-review{
+    padding: 15rem 7%;
+    width: 100%;
+    color: #c6d1dd;
+    
+}
+
+.review-heading{
+    text-align: center;
+}
+
+.review-heading h1{
+    font-size: 100px;
+    color: white;
+    padding-bottom: 5rem;
+}
+.review-inner-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 25rem;
+    text-align: center;
+   padding: 8rem 0;
+    
+}
+.review-box{
+    flex: 1 1 300px;
+    padding: 1rem;
+    box-shadow: rgba(241, 236, 236, 0.35) 0px 5px 15px;
+    border-radius: 0 50px 0 0;
+    border: 2px solid var(--maincolor);
+    cursor: pointer;
+    transition: 1s;
+}
+.review-box:hover{
+ 
+    border-radius: 50px 0 0 0;
+    
+}
+
+.review-box img{
+    border-radius: 100%;
+    width: 200px;
+    transition: 1s;
+    
+}
+.review-box:hover img{
+    transform: scale(1.5);
+}
+.review-stars{
+    padding: 2rem 0;
+}
+.review-stars i{
+    font-size: 5rem;
+    color: var(--secondcolor);
+    margin: 2rem;
+}
+.review-box h2{
+    font-size: 5rem;
+    padding-top: 2rem;
+}
+.review-box p{
+    font-size: 5rem;
+    padding: 1rem 1rem;
+    padding-bottom: 2rem;
+    line-height: 5rem;
+}
+/* Review  Form end*/
+
+/* contact section */
+.contact {
+    padding: 50px;
+    text-align: center;
+    margin-left: 19%;
+  }
+  
+  .contact h2 {
+    font-size: 3em;
+    margin-bottom: 50px;
+    color: red;
+  }
+  
+  .contact p {
+    font-size: 1.3em;
+    margin-bottom: 50px;
+    color: #e9b301;
+  }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    
+  }
+  
+  .contact form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 1.2em;
+
+  }
+  
+  .contact form input,
+  .contact form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 10px solid #e92020;
+    border-radius: 25px;
+    width: 100%;
+    font-size: 0.8em;
+    margin-bottom: 20px;
+
+  }
+  
+  .contact form textarea {
+    height: 120px;
+  }
+  
+  .contact form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 50px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: 0.8em;
+    
+
+  }
+  
+  .contact form button:hover {
+    background-color: #e20e0e;
+  }
+  
+/* contact section end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
